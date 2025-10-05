@@ -1,0 +1,142 @@
+
+.greeting-part{
+    background-color: chocolate;
+    box-shadow: 10px 10px 0px 0px black;
+    text-align: center;
+    width: fit-content;
+    padding: 2px 6px;
+    transform: skewX(8deg);
+    transition: all .2s ease-in-out;
+}
+.hero-img{
+    box-shadow: 10px 10px 0px 0px black;
+}
+ul button{
+    box-shadow: 10px 10px 0px 0px black;
+    border: solid 4px black;
+    padding: 5px 0px;
+    width: 380px;
+    transition: all 0.2s 0.2s ease-in-out;
+}
+div div ul .names{
+    border: solid 4px black; 
+    padding: 0px 5px;
+    width: fit-content;
+}
+.surname{
+    box-shadow: 10px 10px 0px 0px black;
+}
+.first-name{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 0px 0px aqua;
+}
+.table{
+    box-shadow: 10px 10px 0px 0px black;
+    border: solid 4px black;
+}
+.value-list{
+    background-color: rgb(16, 238, 238);
+    width: 300px;
+    border: solid 2px black;
+    margin-top: 2px;
+    text-align: center;
+}
+.logos{
+    height: 40px;
+    width: auto;
+}
+.skill-list{
+    border: solid 4px black;
+    padding: 3px 10px;
+    text-align: center;
+    align-items: center;
+
+
+}
+.skills-list{
+    border: solid 4px black;
+    padding: 3px 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 7px 5px 0px 0px black;
+}
+
+
+.marquee-viewport{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.marquee-track{
+    display: flex;
+    width: max-content;
+    --marquee-duration: 12s;
+    animation: marquee-rtl var(--marquee-duration) linear infinite;
+    animation-play-state: running;
+}
+.marquee-group{
+    display: flex;
+    align-items: center;
+}
+.skill-item{
+    padding: 6px 10px;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0 0 black;
+    background: #fff;
+}
+
+@keyframes marquee-rtl{
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(-50%); }
+}
+
+/* Pause the marquee when the user hovers over the viewport (desktop) */
+.marquee-viewport:hover .marquee-track{
+    animation-play-state: paused;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce){
+    .marquee-track{
+        animation: none !important;
+        transform: none !important;
+    }
+}
+
+/* Slower marquee on larger screens for better readability */
+@media (min-width: 768px){
+    .marquee-track{
+        --marquee-duration: 18s;
+    }
+}
+input, textarea{
+    border: solid 2px black;
+    width: 180px;
+}
+input{
+    height: 55px;
+    padding: 5px 8px;
+
+}
+textarea{
+    height: 250px;
+    width: 370px;
+    padding: 2px 10px;
+    margin: 1px 4px;
+}
+.send-btn{
+    height: 20px;
+    background-color: aqua;
+    width: 330px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 30px 0px;
+}
+.contact-box{
+    box-shadow: 7px 7px 0px 0px black;
+}
+.logo-boxes{
+      box-shadow: 5px 5px 0px 0px black;
+}
